@@ -130,8 +130,8 @@ class Main extends Sprite
 		var callStack:Array<StackItem> = CallStack.exceptionStack(true);
 		var dateNow:String = Date.now().toString();
 
-		dateNow = StringTools.replace(dateNow, " ", "_");
-                dateNow = StringTools.replace(dateNow, ":", "'");
+		dateNow = dateNow.replace(dateNow, " ", "_");
+                dateNow = dateNow.replace(dateNow, ":", "'");
 
 		path = "./crash/" + "PsychEngine_" + dateNow + ".txt";
 
